@@ -1,39 +1,47 @@
-# AI-Based Used Car Price Prediction (India)
+# 🚗 AI-Based Used Car Price Prediction (India)
+
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![ML](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
+
+---
 
 ## 📄 Project Overview
 
 This project develops a machine learning model to predict used car prices in the Indian market.
-The objective is not only to achieve high predictive accuracy, but also to understand the **economic structure of price formation**.
 
-The project combines:
-
-* structured feature engineering
-* model benchmarking
-* economic interpretation of model behavior
+Unlike typical ML projects, the focus is not only on prediction accuracy, but on understanding the **economic logic behind price formation**.
 
 ---
 
-## 🚀 Key Results
+## 🎯 Key Results
 
 * Best model: **Random Forest**
 * Test performance: **R² ≈ 0.91**
-* Lowest RMSE among all tested models
+* Lowest RMSE across all models
 * Strong generalization with controlled overfitting
 
 ---
 
-## 🧠 Key Insight
+## 🧠 Core Insight
 
-Used car pricing follows a **dual structure**:
+Used car prices follow a **dual structure**:
 
-* **Technical value drivers**
-  → Power, Age, Engine, Mileage
+**1. Technical Value Drivers**
 
-* **Market adjustment factors**
-  → Brand, Model, Location
+* Power
+* Age
+* Engine
+* Mileage
 
-👉 Machine learning models do not only predict prices —
-they implicitly learn the **pricing logic of the market**.
+**2. Market Adjustment Factors**
+
+* Brand
+* Model
+* Location
+
+👉 The model does not just predict prices —
+it learns the **underlying pricing logic of the market**.
 
 ---
 
@@ -53,23 +61,25 @@ they implicitly learn the **pricing logic of the market**.
 
 ### Feature Importance
 
-* Power and Age dominate price formation
-* Mileage has reduced importance due to correlation
+![Feature Importance](Figures/feature_importance_rf.png)
 
-### Error Behavior
+### Predicted vs Actual
 
-* Strong accuracy for low and mid-range vehicles
-* Higher deviations in premium segment
+![Prediction](Figures/predicted_vs_actual_rf.png)
+
+### Residual Distribution
+
+![Residuals](Figures/residual_plot.png)
 
 ---
 
 ## 💰 Business Impact
 
-Even small improvements in pricing accuracy create significant value:
+Even small improvements in pricing accuracy generate significant value:
 
-* Average vehicle price: ~9.48 lakh INR
+* Avg. vehicle price: ~9.48 lakh INR
 * 1% improvement ≈ 9,480 INR per vehicle
-* At scale: **multi-million INR annual impact**
+* Scalable to **multi-million INR impact annually**
 
 ---
 
@@ -90,7 +100,7 @@ Even small improvements in pricing accuracy create significant value:
 
 ## 📁 Repository Structure
 
-```id="3df76a"
+```
 used-car-price-prediction-india/
 │
 ├── paper/
@@ -104,4 +114,5 @@ used-car-price-prediction-india/
 
 **Csaba Bakay**
 MIT Professional
-Strategic Procurement & AI Benchmarking
+AI, Benchmarking & Cost Engineering
+
